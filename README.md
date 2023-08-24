@@ -14,6 +14,16 @@ This chatbot is designed to provide fashion product recommendations using data f
 
 - **Interactive Conversations:** The chatbot engages in interactive conversations with users, asking for clarifications or additional details to refine its recommendations further.
 
+## Running Instruction
+Firstly download Anaconda using https://docs.anaconda.com/free/anaconda/install/ and then open the terminal to type the following commands
+```
+$ git clone https://github.com/Ayush152/FlipChat.git
+$ cd FlipChat/
+$ conda env create -f environment.yml
+$ conda activate chatbot
+$ python app.py
+```
+
 ## How to Use
 
 1. **Input Query:** Start a conversation with the chatbot by sending a text query describing your fashion preferences. For example: "I'm looking for casual summer dresses."
