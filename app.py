@@ -2,8 +2,10 @@
 from flask import Flask, render_template, request, jsonify
 from chatbot import chatbot
 
+# Create a Flask app
 app = Flask(__name__)
 
+# Define a route for the default URL
 @app.route("/")
 def index():
     return render_template('index.html')
@@ -11,6 +13,7 @@ def index():
 # Create a dictionary to store chat histories
 chat_histories = {}
 
+# Define a route for the chat endpoint
 @app.route('/chat', methods=['POST'])
 def chat():
     data = request.json
@@ -45,5 +48,6 @@ def chat():
 
     return jsonify(response)
 
+# Run the app
 if __name__ == '__main__':
     app.run(debug=True)

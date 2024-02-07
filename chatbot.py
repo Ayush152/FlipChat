@@ -1,5 +1,6 @@
 
 # %%
+# import the necessary modules
 from langchain.callbacks import StdOutCallbackHandler
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
 from langchain.chains import (
